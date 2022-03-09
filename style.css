@@ -1,0 +1,166 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  vertical-align: top;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phone {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.8s;
+  transform: rotate(0deg);
+  left: 0;
+}
+.phone .top {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone .top .camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #333;
+}
+.phone .screen {
+  height: 300px;
+  width: 220px;
+  transition: 0.8s;
+  overflow: hidden;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.phone .screen .pages {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0px;
+  transition: 0.8s;
+  left: 0px;
+}
+.phone .screen .pages .page {
+  display: inline-block;
+  font-size: initial;
+  height: 100%;
+  width: 100%;
+}
+.phone .screen .pages .page1 {
+  background: linear-gradient(120deg, #036967, #32009e);
+}
+.phone .screen .pages .page1 h3 {
+  text-align: center;
+  color: #c0c0c0;
+  top: 50%;
+  transform: translateY(-80%);
+}
+.phone .screen .pages .page2 {
+  background-color: #f5a2cd;
+  position: relative;
+  white-space: normal;
+  color: #c41670;
+  margin-top: 0px;
+  text-align: center;
+}
+.phone .screen .pages .page2:before, .phone .screen .pages .page2:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #c41670;
+}
+.phone .screen .pages .page2:after {
+  position: absolute;
+  bottom: 0px;
+}
+.phone .screen .pages .page2 p {
+  font-size: 10px;
+  padding: 0px 20px;
+  text-align: left;
+}
+.phone .screen .pages .page3 {
+  text-align: center;
+  background-color: #fa9852;
+}
+.phone .screen .pages .page3 p {
+  top: 30px;
+  font-size: 20px;
+  Z-index: 2;
+  color: #eee;
+  font-weight: 600;
+}
+.phone .screen .pages .page3 .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #ff5c1c;
+  Z-index: 1;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.phone .bottom {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone .bottom .button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 27px;
+  text-align: center;
+  font-weight: 100;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.phone .bottom .button:hover {
+  background-color: #ddd;
+}
+
+.status, .name {
+  color: #fff;
+  margin: 0;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.name {
+  margin: 10px;
+}
+
+.model button, .color button {
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.model button:hover, .color button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.color {
+  margin-top: 5px;
+}
